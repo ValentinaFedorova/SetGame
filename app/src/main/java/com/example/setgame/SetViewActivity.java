@@ -50,7 +50,7 @@ public class SetViewActivity extends Activity {
 
     public void fetchCards(ArrayList<Card> cards){
         ArrayList<Card> testset = setCardsFieldView.cardField.findSet(cards);
-        if (testset.size()!=0) {
+        if (testset.size()!=0 && cards.size()==12) {
             setCardsFieldView.cardField.setCard(cards);
             setCardsFieldView.cardField.card_context = getApplicationContext();
             setCardsFieldView.invalidate();
@@ -86,7 +86,7 @@ public class SetViewActivity extends Activity {
     }
 
     public void checkCardsLeft(){
-        if (cards_left!=0){
+        if (cards_left>=12){
             askCards();
         }
         else {
