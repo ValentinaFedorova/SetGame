@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10sp"
+        android:paddingTop="30sp"
+        app:srcCompat="@drawable/login2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:fontFamily="monospace"
+        android:layout_height="wrap_content"
+        android:text="Регистрация" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nickname"
+        android:id="@+id/nick"
+        android:layout_marginLeft="40sp"
+        android:layout_marginRight="40sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="30sp"
+        android:background="@drawable/contour"
+        android:padding="15sp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn"
+        android:layout_marginLeft="120sp"
+        android:onClick="onRegisterClick"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_marginRight="120sp"
+        android:background="@drawable/button"
+        android:text="ок"/>
+
+</LinearLayout>
